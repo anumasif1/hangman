@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Libre+Baskerville|Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="game-name">HANGMAN</header>
+    <div class="container">
+        <div class="guess-word col-sm-12">
+            <h1 id="guess-word">_ _ _ _ _ _</h1>
+        </div>
+        <!-- Content here -->
+        <div class="lives-container">
+            <div class="row">
+                <div id='hm-image'class="hangman col-sm-6"> <img src="assets\images\hm-9.png" alt="Hangman End" class="img-thumbnail"
+                        id="hm-9" width="300px" height="300px">
+                </div>
+                <div class=" text col-sm-6">
+                    <p id="wrong" class="wrong-guess"><b>h s k l m h d i o</b></p>
+                    <p id="comment" class="message"> You Lost!</p>
+                    <button type="button" class="btn btn-secondary btn-lg">Restart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <footer class="page-footer font-small pt-4 mt-5">
+
+    <div class="footer-text">Word Guess Game</div>
+              
+          
+          </footer>
+          
+</body>
+
+</html>
