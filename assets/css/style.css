@@ -11,7 +11,7 @@ body{
     margin: 0 auto;
 }
 
-#guess-word{
+.guess-word{
     text-align: center;
     font-size: 50px;
     color: azure;
@@ -28,4 +28,13 @@ body{
     color: orange;
     text-align: right;
     margin-right: 20px;
+}
+
+.hint{
+    text-align: center;
+    color: azure;
+}
+
+#restart{
+    color: black;
 }

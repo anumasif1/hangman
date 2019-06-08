@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman Game</title>
+    <script src="assets\javascript\game.js"></script>
     <link rel="stylesheet" type="text/css" href="assets\css\style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Libre+Baskerville|Roboto&display=swap"
         rel="stylesheet">
@@ -20,37 +21,37 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header class="game-name">HANGMAN</header>
     <div class="container">
         <div class="guess-word col-sm-12">
-            <h1 id="guess-word">_ _ _ _ _ _</h1>
+            <h1 id="guessWord">_ _ _ _ _ _</h1>
+            <h6 class="hint">Hint: It's a country name!</h6>
         </div>
         <!-- Content here -->
         <div class="lives-container">
             <div class="row">
-                <div id='hm-image'class="hangman col-sm-6"> <img src="assets\images\hm-9.png" alt="Hangman End" class="img-thumbnail"
-                        id="hm-9" width="300px" height="300px">
+                <div id='hm-image' class="hangman col-sm-6"> <img src="/assets/images/hm-0.png" alt="Hangman End"
+                        class="img-thumbnail" id="hm-9" width="300px" height="300px">
                 </div>
                 <div class=" text col-sm-6">
                     <p id="wrong" class="wrong-guess"><b>h s k l m h d i o</b></p>
+                    <p id="lives"></p>
                     <p id="comment" class="message"> You Lost!</p>
-                    <button type="button" class="btn btn-secondary btn-lg">Restart</button>
-
+                    <p id="alert">  </p>
+                    <input id="restart" type="button" onclick="restart()" value="Reset">
                 </div>
             </div>
         </div>
     </div>
-  
-    <footer class="page-footer font-small pt-4 mt-5">
 
-    <div class="footer-text">Word Guess Game</div>
-              
-          
-          </footer>
-          
+    <footer class="page-footer font-small pt-4 mt-5">
+        <div class="footer-text">Word Guess Game</div>
+    </footer>
+
 </body>
 
 </html>
