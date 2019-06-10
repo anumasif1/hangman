@@ -1,5 +1,6 @@
 body{
     background-color: #fa9c31 !important;
+    color: azure !important;
 }
 
 .game-name{
@@ -37,4 +38,9 @@ body{
 
 #restart{
     color: black;
+}
+
+#alert{
+    font-weight: bold;
+    font-size: 40px;
 }
